@@ -26,6 +26,7 @@ h2 {
 .carousel-item {
     position: relative;
     height: 100%;
+    z-index: 1;
 }
 
 .carousel-item img {
@@ -172,6 +173,7 @@ h2 {
     -webkit-transform: scale(0, 1);
     -ms-transform: scale(0, 1);
     transform: scale(0, 1);
+    z-index: 2;
 }
 
 .hovereffect:hover .overlay {
@@ -180,6 +182,7 @@ h2 {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
+    z-index: 2;
 }
 
 .hovereffect img {
@@ -358,6 +361,16 @@ background-color: #2D4230;
 color: #FFF;
 }
 
+#takaro{
+    width: 100vh;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    float: left;
+    z-index: 1;
+}
+
+
 @media (min-width: 540px) {
     .smg {
         width: 75%;
@@ -376,10 +389,6 @@ color: #FFF;
         font-size: 300%;
     }
 
-    .carousel-caption1.active {
-        display: none;
-    }
-    
 }
 
 @media (min-width: 100px) {
