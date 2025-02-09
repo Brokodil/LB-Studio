@@ -369,6 +369,7 @@ color: #FFF;
     .carousel-caption1 {
         top: 40%;
         left: 50%;
+        font-size: 300%;
     }
 
     .carousel-caption1.active {
