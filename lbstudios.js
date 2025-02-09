@@ -197,3 +197,23 @@ function teszt() {
         document.getElementById("K_101").style.backgroundColor = ""
     }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('.carousel-item img');
+    images.forEach(image => {
+        image.addEventListener('click', function() {
+            const caption = this.closest('.carousel-item').querySelector('.carousel-caption');
+            const hoverEffect = this.closest('.carousel-item').querySelector('.hovereffect');
+
+            if (caption && hoverEffect) {
+                if (caption.style.display === 'none') {
+                    caption.style.display = 'block';
+                    hoverEffect.style.display = 'none';
+                } else {
+                    caption.style.display = 'none';
+                    hoverEffect.style.display = 'block';
+                }
+            }
+        });
+    });
+});
