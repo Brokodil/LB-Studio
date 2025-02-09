@@ -371,15 +371,10 @@ color: #FFF;
         left: 50%;
     }
 
-    .carousel:checked .carousel-caption {
+    .carousel-caption1.active {
         display: none;
-        transition: 1s;
     }
     
-    .carousel:checked .carousel-caption1 {
-        display: none;
-        transition: 1s;
-    }
 }
 
 @media (min-width: 100px) {
