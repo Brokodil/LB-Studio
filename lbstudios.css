@@ -369,11 +369,11 @@ color: #FFF;
     .carousel-caption1 {
         top: 40%;
         left: 50%;
-        font-size: 200%;
+        font-size: 300%;
     }
 
     .carousel-caption {
-        font-size: 200%;
+        font-size: 300%;
     }
 
     .carousel-caption1.active {
@@ -390,6 +390,5 @@ color: #FFF;
     .kep2 {
         width: 100%;
         margin-left: 0;
-        height: max-content;
     }
 }
