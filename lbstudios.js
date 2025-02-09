@@ -127,78 +127,87 @@ function teszt() {
     document.getElementById('pontok').innerHTML = 'Elért pontok 10/' + (pont) + "<br>" + (valasz)
     console.log(pont)
 
-    if(ke1 == 0) {
+    if (ke1 == 0) {
         document.getElementById("K_11").style.backgroundColor = "red"
-    } 
+    }
     else {
         document.getElementById("K_11").style.backgroundColor = ""
     }
-    
-    if(ke2 == 0) {
+
+    if (ke2 == 0) {
         document.getElementById("K_21").style.backgroundColor = "red"
-    } 
+    }
     else {
         document.getElementById("K_21").style.backgroundColor = ""
     }
-    
-    if(ke3 == 0) {
+
+    if (ke3 == 0) {
         document.getElementById("K_31").style.backgroundColor = "red"
-    } 
+    }
     else {
         document.getElementById("K_31").style.backgroundColor = ""
     }
-    
-    if(ke4 == 0) {
+
+    if (ke4 == 0) {
         document.getElementById("K_41").style.backgroundColor = "red"
-    } 
+    }
     else {
         document.getElementById("K_41").style.backgroundColor = ""
     }
-    
-    if(ke5 == 0) {
+
+    if (ke5 == 0) {
         document.getElementById("K_51").style.backgroundColor = "red"
-    } 
+    }
     else {
         document.getElementById("K_51").style.backgroundColor = ""
     }
-    
-    if(ke6 == 0) {
+
+    if (ke6 == 0) {
         document.getElementById("K_61").style.backgroundColor = "red"
-    } 
+    }
     else {
         document.getElementById("K_61").style.backgroundColor = ""
     }
-    
-    if(ke7 == 0) {
+
+    if (ke7 == 0) {
         document.getElementById("K_71").style.backgroundColor = "red"
-    } 
+    }
     else {
         document.getElementById("K_71").style.backgroundColor = ""
     }
-    
-    if(ke8 == 0) {
+
+    if (ke8 == 0) {
         document.getElementById("K_81").style.backgroundColor = "red"
-    } 
+    }
     else {
         document.getElementById("K_81").style.backgroundColor = ""
     }
-    
-    if(ke9 == 0) {
+
+    if (ke9 == 0) {
         document.getElementById("K_91").style.backgroundColor = "red"
-    } 
+    }
     else {
         document.getElementById("K_91").style.backgroundColor = ""
     }
 
-    if(ke10 == 0) {
+    if (ke10 == 0) {
         document.getElementById("K_101").style.backgroundColor = "red"
-    } 
+    }
     else {
         document.getElementById("K_101").style.backgroundColor = ""
     }
 }
 
-function hover(Element) {
-    Element.classlist.toggle('active')
-    console.log('hover')
+function hover() {
+    console.log("hover")
+    if (window.innerWidth < 768) {
+        if (document.getElementById("takaro").style.display == "block") {
+            document.getElementById("takaro").style.display = "none"
+        console.log("none1")
+        }
+        else if (document.getElementById("takaro").style.display = "none") {
+            document.getElementById("takaro").style.display = "block"
+        console.log("block1")
+        }
+    }
 }
